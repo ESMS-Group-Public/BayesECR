@@ -2,23 +2,12 @@ function [y] = ECRrectmodel(k, D, ax, ay, az, t)
 % Solves the ECR rectangle model as described in Yasuda and Hishinuma's 
 % 1996 paper in J. Solid State Chem. 
 % Returns a vector y = M(t)/M(inf)
-% k = effective exchange coefficient
-% D = Effective Diffusion coefficient
+%D =  bulk diffusion coeff.
+%k =  surface exchange coeff.
 % ax, ay, az are the x, y, and z dimensions of the rectangle
 % t = is the time vector
 
 
-%D =  bulk diffusion coeff.
-%k =  surface exchange coeff.
-%ax =.05; % half of the sample length along x-axis.
-%k = 5e-5;
-%D = 5e-5;
-%N = length(times);
-%for n = 1:N;
-   %t(n) = times(n);
-%end   
-
-%[t,z] = ECRDATAFUNCTION;
 
 Lx = ax*k/D;
 

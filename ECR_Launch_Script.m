@@ -6,7 +6,7 @@
 t        =     ;     % Time [1xN]
 z        =     ;     % Row vector as a function of t [1xN]
 
-% Dimensions of rectangular speciman
+% Dimensions of rectangular specimen
 % Use consistent units
 ax       =     ;
 ay       =     ;
