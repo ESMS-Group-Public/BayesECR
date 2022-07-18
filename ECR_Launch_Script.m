@@ -16,6 +16,7 @@ az       =     ;
 % k, surface reation rate
 kmin     =     ;
 kmax     =     ;
+k        =     ;
 SIGMAk   =     ;
 %D, bulk diffusion constant
 Dmin     =     ;
