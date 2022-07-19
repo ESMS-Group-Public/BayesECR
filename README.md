@@ -1,3 +1,7 @@
+project lead: David Mebane
+programming lead: Josh Blair
+other contributors: Giuseppe Brunello, Charlie Harmison, Joshua Caswell
+
 # BayesECR Guide
 A Matlab Bayesian Fitting of Parameters in Electrical Conductivity Relaxation (ECR) and Isotope Exchange/Secondary Ion Mass Spectrometry (SIMS) Experiments [^1].
 This guide will help explain how the Bayesian functions perform their calculations and how to implement your own data to receive results.
