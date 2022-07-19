@@ -1,5 +1,7 @@
 project lead: David Mebane
+
 programming lead: Josh Blair
+
 other contributors: Giuseppe Brunello, Charlie Harmison, Joshua Caswell
 
 # BayesECR Guide
