@@ -1,8 +1,10 @@
-project lead: David Mebane
+Project Lead: David Mebane
+Programming Lead: Josh Blair
+Other Contributors: Giuseppe Brunello, Charlie Harmison, Joshua
+Caswell
 
-programming lead: Josh Blair
-
-other contributors: Giuseppe Brunello, Charlie Harmison, Joshua Caswell
+Please Cite: Blair, J. and Mebane, D.S., Solid State Ionics Vol. 270
+(2015) pp. 47-53.
 
 # BayesECR Guide
 A Matlab Bayesian Fitting of Parameters in Electrical Conductivity Relaxation (ECR) and Isotope Exchange/Secondary Ion Mass Spectrometry (SIMS) Experiments [^1].
