@@ -1,6 +1,6 @@
 %% Example of ECR use cited as REF 25 
 % Original paper that details experiement can be found at
-% https://www.sciencedirect.com/science/article/abs/pii/S0167273800005543
+% https://www-sciencedirect-com.wvu.idm.oclc.org/science/article/pii/S0167273800005543?via%3Dihub
 
 % Data Extraction
 % Data is formatted to two row vectors

@@ -25,10 +25,10 @@ D        =     ;
 SIGMAD   =     ;
 
 %SAMPLE OF VALUES FOR IG DISTRUBUTION; Experiment with your own values
-ps       =     ;        % Best guess for Observational Error Standard Deviation
+ps       = 0.02;        % StD of Obs. Variance
 N        = 5000;        % Number of cycles to run the calibration
-nu       = 4   ;        % Shape parameter of the ig prior
-tau      = 5*ps^2;      % Scale Parameter of the ig prior
+nu       = 1000;        % Shape parameter of the ig prior
+tau      = 1010*ps^2;   % Scale Parameter of the ig prior
 
 thinfact =     ;        % Thinning Factor between [0,1]
 
