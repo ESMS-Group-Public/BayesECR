@@ -87,8 +87,6 @@ tau      = 1010*ps^2;
 thinfact =     ;
 ```
 
-The launch script for ECR currently plots the ECRrectmodel vs time and a scatter plot for the posterior distribution of k*  and D*. 
-
 ## SIMS analysis
 Inorder to conduct the SIMS analysis SIMS_Launch_Script.m should be ran. Input your depth in centimeters into the x variable, the z variable should be a distance that is function of x, and t should be the time associated with the dataset.
 ```

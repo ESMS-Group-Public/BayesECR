@@ -30,3 +30,24 @@ tau      = 1001*ps^2;   % Scale Parameter of the ig prior
 thinfact =     ;        % Thinning Factor between [0,1]
 
 [kpost, Dpost, psipost, weights, successk, successD] = MCMCSIMSig(x, z, t, kmin, kmax, k, SIGMAk, Dmin, Dmax, D, SIGMAD, N, nu, tau, thinfact);
+
+% Plots
+figure
+covdraws = 50;
+drawind = randi(N-1000,1,covdraws);
+plot(x,z, 'r.');
+hold on
+
+for i=1:covdraws
+    y = SIMS(x,kpost(1000+drawind(i)), Dpost(1000+drawind(i)), t);
+    plot(x, y, 'LineWidth', 0.4)
+end
+
+figure
+scatdraws = 1000;
+scatind = randi(N-1000,1,scatdraws);
+scattervecs = zeros(scatdraws, 2);
+for i=1:scatdraws
+    scattervecs(i,:) = [kpost(scatind(i)+1000) Dpost(scatind(i)+1000)];
+end
+scatter(scattervecs(:,1), scattervecs(:,2), 'MarkerFaceAlpha', 0.2)
