@@ -66,7 +66,7 @@ Inorder to conduct the ECR analysis ECR_Launch_Script.m should be ran. First thi
 t        =     ;     % Time [1xN]
 z        =     ;     % Row vector as a function of t [1xN]
 ```
-Below this you should enter your dimensions of the specimen.
+Below this you should enter half the dimensions of the specimen.
 ```
 ax       =     ;
 ay       =     ;
@@ -94,7 +94,7 @@ tau      = 1010*ps^2;
 
 thinfact =     ;
 ```
-
+Samples may burn-in. This is addressed in the plotting section of the code. A rule-of-thumb is that 1,000 samples are eliminated to reduce the burn-in. This value can be chnaged, but it must be consistent.
 ## SIMS analysis
 Inorder to conduct the SIMS analysis SIMS_Launch_Script.m should be ran. Input your depth in centimeters into the x variable, the z variable should be a distance that is function of x, and t should be the time associated with the dataset.
 ```

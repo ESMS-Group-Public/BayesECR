@@ -8,6 +8,7 @@ z        =     ;     % Row vector as a function of t [1xN]
 
 % Dimensions of rectangular specimen
 % Use consistent units
+% Halve dimensions of specimen
 ax       =     ;
 ay       =     ;
 az       =     ;
@@ -35,6 +36,10 @@ thinfact =     ;        % Thinning Factor between [0,1]
 [kpost, Dpost, psipost,SUCCESSk, SUCCESSD, SUCCESSpsi] = MCMCECRig(ax, ay, az, z, t, kmin, kmax, k, SIGMAk, Dmin, Dmax, D, SIGMAD, N, nu, tau, thinfact);
 
 % Plots
+% Hardcoded subtraction of 1000 ( NOT to be confused with scatdraws ) is
+% used to reduce burn-in
+% A rule-of-thumb is that by eliminating at least 1000 samples, burn-in can
+% be reduced
 figure
 covdraws = 50;
 drawind = randi(N-1000,1,covdraws);

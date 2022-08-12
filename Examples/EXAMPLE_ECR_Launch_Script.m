@@ -9,11 +9,14 @@ t = Matrix(:,1)';       % Time Row Vector
 z = Matrix(:,2)';       % Row Vector as a function of t
 
 % Dimensions of rectangular speciman, in this case LSCF
-% Use consistent units
+% Use consistent units, in this case cm
 ax= 4;
 ay= .15;
 az= .15;
-
+% FOR ALL CASES, dimensions should be halved
+ax = ax/2;
+ay = ay/2;
+az = az/2;
 % Priors, or initial guesses at values
 % since minimum values are small, guesses can be an order of magnitude
 % k, surface reaction rate
@@ -37,6 +40,10 @@ thinfact = .15;          % Thinning factor b/w (0,1) fraction of data to be used
 [kpost, Dpost, psipost,SUCCESSk, SUCCESSD, SUCCESSpsi] = MCMCECRig(ax, ay, az, z, t, kmin, kmax, k, SIGMAk, Dmin, Dmax, D, SIGMAD, N, nu, tau, thinfact);
 
 % Plots
+% Hardcoded subtraction of 1000 ( NOT to be confused with scatdraws ) is
+% used to reduce burn-in
+% A rule-of-thumb is that by eliminating at least 1000 samples, burn-in can
+% be reduced
 figure
 covdraws = 50;
 drawind = randi(N-1000,1,covdraws);
