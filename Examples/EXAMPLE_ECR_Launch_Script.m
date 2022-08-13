@@ -32,8 +32,8 @@ SIGMAD   =   1;          % Standard Deviation of the draws on D
 
 ps       = 0.02;         % Standard Deviation of Observational error
 N        = 5000;         % Number of cycles to run the calibration
-nu       = 1000;         % Shape parameter of the inverse gamma prior
-tau      = 1010*ps^2;    % Scale parameter of the inverse gamma prior
+nu       = 4;         % Shape parameter of the inverse gamma prior
+tau      = 5*ps^2;    % Scale parameter of the inverse gamma prior
 
 thinfact = .15;          % Thinning factor b/w (0,1) fraction of data to be used for calibration
 
